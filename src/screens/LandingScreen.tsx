@@ -1,23 +1,30 @@
-import { View, Text, ActivityIndicator } from 'react-native'
+import { View, Text } from 'react-native'
 import React from 'react'
 import { useMarvelCharacters } from '../hooks/useMarvelCharacters'
+import { MarvelCharacter } from '../interfaces/charactersInterface';
+import { CharacterCard, StyledBackground,StyledFlatList } from '../components';
 
 export const LandingScreen = () => {
   const {marvelCharacters,isLoading}= useMarvelCharacters();
-  if(isLoading){
-    return (
-        <View style={{flex:1,justifyContent:'center', alignItems:'center'}}>
-            <ActivityIndicator color='red' size={100}/>
-        </View>
+  
+  function renderMarvelCharacter(marvelCharacter:MarvelCharacter){
+    return(
+      <CharacterCard
+        title={marvelCharacter.name}
+      />
     )
   }
   return (
-    <View>
-      <Text>{marvelCharacters.length}</Text>
-      <Text>{marvelCharacters.length}</Text>
-      <Text>{marvelCharacters.length}</Text>
-      
-    </View>
+    <StyledBackground >
+      <StyledFlatList
+        horizontal
+        data={marvelCharacters}
+        keyExtractor={({id}:any)=>id}
+        renderItem={({item}:any)=>renderMarvelCharacter(item)}
+        ItemSeparatorComponent={()=><View style={{width:10}}/>}
+        showsHorizontalScrollIndicator={false}
+      />
+    </StyledBackground>
   )
 }
 
