@@ -19,7 +19,10 @@ export const StackNavigator = () => {
             headerStyle:{
               backgroundColor:colors.red,
             },
-            
+            title:'',
+            headerShadowVisible: false,
+            headerBackTitleVisible: false,
+            headerTintColor:colors.black
         }}>
       <Stack.Screen name="LandingScreen" component={LandingScreen} />
       <Stack.Screen name="DetailScreen" component={DetailScreen} />
