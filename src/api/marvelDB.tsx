@@ -6,6 +6,7 @@ const marvelDB= axios.create({
         ts:1,
         apikey:'79b5df04c3f413203d39dfa541a02bec',
         hash:'56363f66d0daa6b2a4d97991a14beb26',
+        limit:90,
     }
 })
 

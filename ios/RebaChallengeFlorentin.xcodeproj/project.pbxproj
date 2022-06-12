@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RebaChallengeFlorentinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RebaChallengeFlorentinTests.m */; };
+		0B2A9ECA28565B37001A4D01 /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A9EC928565B36001A4D01 /* Fonts */; };
+		0B2A9ED72856640F001A4D01 /* Action_Man_Shaded.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A9ECD2856640C001A4D01 /* Action_Man_Shaded.ttf */; };
+		0B2A9ED82856640F001A4D01 /* Action_Man.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A9ECE2856640C001A4D01 /* Action_Man.ttf */; };
+		0B2A9ED92856640F001A4D01 /* Action_Man_Extended.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A9ECF2856640D001A4D01 /* Action_Man_Extended.ttf */; };
+		0B2A9EDA2856640F001A4D01 /* Action_Man_Shaded_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A9ED02856640D001A4D01 /* Action_Man_Shaded_Italic.ttf */; };
+		0B2A9EDB2856640F001A4D01 /* Action_Man_Extended_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A9ED12856640D001A4D01 /* Action_Man_Extended_Bold.ttf */; };
+		0B2A9EDC2856640F001A4D01 /* Action_Man_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A9ED22856640D001A4D01 /* Action_Man_Italic.ttf */; };
+		0B2A9EDD2856640F001A4D01 /* Action_Man_Bold_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A9ED32856640E001A4D01 /* Action_Man_Bold_Italic.ttf */; };
+		0B2A9EDE2856640F001A4D01 /* Action_Man_Extended_Bold_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A9ED42856640E001A4D01 /* Action_Man_Extended_Bold_Italic.ttf */; };
+		0B2A9EDF2856640F001A4D01 /* Action_Man_Extended_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A9ED52856640E001A4D01 /* Action_Man_Extended_Italic.ttf */; };
+		0B2A9EE02856640F001A4D01 /* Action_Man_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B2A9ED62856640E001A4D01 /* Action_Man_Bold.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-RebaChallengeFlorentin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RebaChallengeFlorentin.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -30,6 +41,17 @@
 		00E356EE1AD99517003FC87E /* RebaChallengeFlorentinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RebaChallengeFlorentinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* RebaChallengeFlorentinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RebaChallengeFlorentinTests.m; sourceTree = "<group>"; };
+		0B2A9EC928565B36001A4D01 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		0B2A9ECD2856640C001A4D01 /* Action_Man_Shaded.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Action_Man_Shaded.ttf; sourceTree = "<group>"; };
+		0B2A9ECE2856640C001A4D01 /* Action_Man.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Action_Man.ttf; sourceTree = "<group>"; };
+		0B2A9ECF2856640D001A4D01 /* Action_Man_Extended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Action_Man_Extended.ttf; sourceTree = "<group>"; };
+		0B2A9ED02856640D001A4D01 /* Action_Man_Shaded_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Action_Man_Shaded_Italic.ttf; sourceTree = "<group>"; };
+		0B2A9ED12856640D001A4D01 /* Action_Man_Extended_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Action_Man_Extended_Bold.ttf; sourceTree = "<group>"; };
+		0B2A9ED22856640D001A4D01 /* Action_Man_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Action_Man_Italic.ttf; sourceTree = "<group>"; };
+		0B2A9ED32856640E001A4D01 /* Action_Man_Bold_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Action_Man_Bold_Italic.ttf; sourceTree = "<group>"; };
+		0B2A9ED42856640E001A4D01 /* Action_Man_Extended_Bold_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Action_Man_Extended_Bold_Italic.ttf; sourceTree = "<group>"; };
+		0B2A9ED52856640E001A4D01 /* Action_Man_Extended_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Action_Man_Extended_Italic.ttf; sourceTree = "<group>"; };
+		0B2A9ED62856640E001A4D01 /* Action_Man_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Action_Man_Bold.ttf; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RebaChallengeFlorentin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RebaChallengeFlorentin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RebaChallengeFlorentin/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RebaChallengeFlorentin/AppDelegate.mm; sourceTree = "<group>"; };
@@ -83,6 +105,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0B2A9ECC28565B8C001A4D01 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B2A9EC928565B36001A4D01 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* RebaChallengeFlorentin */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +146,17 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				0B2A9ED32856640E001A4D01 /* Action_Man_Bold_Italic.ttf */,
+				0B2A9ED62856640E001A4D01 /* Action_Man_Bold.ttf */,
+				0B2A9ED42856640E001A4D01 /* Action_Man_Extended_Bold_Italic.ttf */,
+				0B2A9ED12856640D001A4D01 /* Action_Man_Extended_Bold.ttf */,
+				0B2A9ED52856640E001A4D01 /* Action_Man_Extended_Italic.ttf */,
+				0B2A9ECF2856640D001A4D01 /* Action_Man_Extended.ttf */,
+				0B2A9ED22856640D001A4D01 /* Action_Man_Italic.ttf */,
+				0B2A9ED02856640D001A4D01 /* Action_Man_Shaded_Italic.ttf */,
+				0B2A9ECD2856640C001A4D01 /* Action_Man_Shaded.ttf */,
+				0B2A9ECE2856640C001A4D01 /* Action_Man.ttf */,
+				0B2A9ECC28565B8C001A4D01 /* Resources */,
 				13B07FAE1A68108700A75B9A /* RebaChallengeFlorentin */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RebaChallengeFlorentinTests */,
@@ -242,6 +283,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2A9ED72856640F001A4D01 /* Action_Man_Shaded.ttf in Resources */,
+				0B2A9ED82856640F001A4D01 /* Action_Man.ttf in Resources */,
+				0B2A9ED92856640F001A4D01 /* Action_Man_Extended.ttf in Resources */,
+				0B2A9EDA2856640F001A4D01 /* Action_Man_Shaded_Italic.ttf in Resources */,
+				0B2A9EDB2856640F001A4D01 /* Action_Man_Extended_Bold.ttf in Resources */,
+				0B2A9EDC2856640F001A4D01 /* Action_Man_Italic.ttf in Resources */,
+				0B2A9EDD2856640F001A4D01 /* Action_Man_Bold_Italic.ttf in Resources */,
+				0B2A9EDE2856640F001A4D01 /* Action_Man_Extended_Bold_Italic.ttf in Resources */,
+				0B2A9EDF2856640F001A4D01 /* Action_Man_Extended_Italic.ttf in Resources */,
+				0B2A9EE02856640F001A4D01 /* Action_Man_Bold.ttf in Resources */,
+				0B2A9ECA28565B37001A4D01 /* Fonts in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);

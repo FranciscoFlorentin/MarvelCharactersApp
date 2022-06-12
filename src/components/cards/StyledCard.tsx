@@ -1,12 +1,17 @@
 import styled from 'styled-components/native';
 import { colors } from '../../styles/colors';
+import { StyleSheetProperties } from 'react-native';
 interface CustomProps{
-	color?: string
+	color?: string,
+    height ?: number,
+    width ?: number | string,
+    style ?: StyleSheetProperties
 }
 export const StyledCard = styled.TouchableOpacity<CustomProps>`
-    border-width:1px;
+    border-width:1.5px;
     border-radius: 16px;
-    height: 300px;
-    width: 250px;
-    background-color: black
+    background-color: black;
+    overflow: hidden;
+    height: ${({height})=> height ? height: '300'}px;
+    width: ${({width})=> width ? width : '300'}px;
 `;

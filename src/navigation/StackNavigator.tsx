@@ -2,10 +2,12 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { DetailScreen, LandingScreen } from '../screens';
+import { MarvelCharacter } from '../interfaces/charactersInterface';
+import { colors } from '../styles/colors';
 
 export type StackParams={
-    Landing: undefined,
-    DetailScreen: undefined
+  LandingScreen: undefined,
+  DetailScreen: MarvelCharacter
 }
 
 const Stack = createNativeStackNavigator<StackParams>();
@@ -14,9 +16,12 @@ export const StackNavigator = () => {
   return (
     <Stack.Navigator
         screenOptions={{
-            headerShown:false,
+            headerStyle:{
+              backgroundColor:colors.red,
+            },
+            
         }}>
-      <Stack.Screen name="Landing" component={LandingScreen} />
+      <Stack.Screen name="LandingScreen" component={LandingScreen} />
       <Stack.Screen name="DetailScreen" component={DetailScreen} />
     </Stack.Navigator>
   )

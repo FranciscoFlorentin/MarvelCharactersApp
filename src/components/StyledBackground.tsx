@@ -4,10 +4,8 @@ interface CustomProps{
 	color?: string
 }
 export const StyledBackground = styled.View<CustomProps>`
-	flex: 1 ;
-    align-items:center;
-    flex-direction:row;
+    flex:1;
+    padding: 5px;
     background-color: ${props=>props.color ? props.color : colors.red};
-    padding: 20px;
 `;
 
