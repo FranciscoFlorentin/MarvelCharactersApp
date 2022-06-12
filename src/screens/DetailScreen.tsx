@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, Dimensions, ImageBackground, Image } from 'react-native'
+import { View, Text, ScrollView, Dimensions, ImageBackground, Image, ActivityIndicator } from 'react-native'
 import React from 'react'
 import { StackParams } from '../navigation/StackNavigator'
 import { NativeStackScreenProps } from '@react-navigation/native-stack'
@@ -14,12 +14,12 @@ import { MarvelCharacter } from '../interfaces/charactersInterface';
 interface Props extends NativeStackScreenProps<StackParams,'DetailScreen'>{}
 
 export const DetailScreen = ({route,navigation}:Props) => {
-  const favouriteCharacters=useSelector((state:any)=>state.marvel.favouriteCharacters);
+  const favoriteCharacters=useSelector((state:any)=>state.marvel.favoriteCharacters);
   const dispatch=useDispatch();
   let {name,thumbnail,comics,events,stories,series,description} = route.params;
   let imageUrl= getCorrectUrl(thumbnail.path+'.'+thumbnail.extension)
   function isCharacterInFavList(){
-    return favouriteCharacters.find((character:MarvelCharacter)=>character.id==route.params.id)
+    return favoriteCharacters&&favoriteCharacters.find((character:MarvelCharacter)=>character.id==route.params.id)
   }
   return (
     <StyledBackground>
@@ -37,10 +37,10 @@ export const DetailScreen = ({route,navigation}:Props) => {
             isCharacterInFavList() 
             ? dispatch(removeFavCharacter(route.params))
             : dispatch(addFavCharacter(route.params))}/>
-        {comics?.items?.length ? <StyledSectionList title='Comics' data={comics.items}/> : null}
-        {series?.items?.length ? <StyledSectionList title='Series' data={series.items}/> : null}
-        {stories?.items?.length ? <StyledSectionList title='Stories' data={stories.items}/> : null }
-        {events?.items?.length ? <StyledSectionList title='Events' data={events.items}/>: null}
+        {comics?.items?.length ? <StyledSectionList key={'Comics'} title='Comics' data={comics.items}/> : null}
+        {series?.items?.length ? <StyledSectionList key={'Series'} title='Series' data={series.items}/> : null}
+        {stories?.items?.length ? <StyledSectionList key={'Stories'} title='Stories' data={stories.items}/> : null }
+        {events?.items?.length ? <StyledSectionList key={'Events'} title='Events' data={events.items}/>: null}
       </ScrollView>
     </StyledBackground>
   )

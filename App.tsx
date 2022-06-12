@@ -13,7 +13,7 @@ export const App = () => {
 		<Provider store={store}>
 			<PersistGate loading={null} persistor={persistStore(store)}>
 				<NavigationContainer>
-					<StatusBar backgroundColor='transparent'/>
+					<StatusBar hidden />
 					<StackNavigator/>
 				</NavigationContainer>
 			</PersistGate>	

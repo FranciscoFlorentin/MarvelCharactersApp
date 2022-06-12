@@ -3,14 +3,14 @@ import {createSlice} from '@reduxjs/toolkit';
 const marvelReducer = createSlice({
     name: 'marvel',
     initialState: {
-        favouriteCharacters: [],
+        favoriteCharacters: [],
     },
     reducers: {
         addFavCharacter: (state, {payload}) => {
-            state.favouriteCharacters=[...state.favouriteCharacters,payload]
+            state.favoriteCharacters=[...state.favoriteCharacters,payload]
         },
         removeFavCharacter: (state,{payload})=>{
-            state.favouriteCharacters=state.favouriteCharacters.filter(character=>character.id!=payload.id)
+            state.favoriteCharacters=state.favoriteCharacters.filter(character=>character.id!=payload.id)
         }
     },
     extraReducers: {

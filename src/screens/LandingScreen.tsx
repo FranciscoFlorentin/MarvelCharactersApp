@@ -13,7 +13,7 @@ interface Props extends NativeStackScreenProps<StackParams,'LandingScreen'>{}
 
 export const LandingScreen = ({route,navigation}:Props) => {
   const {marvelCharacters,isLoading}= useMarvelCharacters();
-  const favouriteCharacters=useSelector((state:any)=>state.marvel.favouriteCharacters);
+  const favoriteCharacters=useSelector((state:any)=>state.marvel.favoriteCharacters);
   
   /**
    * renderMarvelCharacter
@@ -55,18 +55,18 @@ export const LandingScreen = ({route,navigation}:Props) => {
               showsHorizontalScrollIndicator={false}
             />
         }
-        <StyledText paddingVertical={30} bold color='white' size={32}>Favourite Characters</StyledText>
+        <StyledText paddingVertical={30} bold color='white' size={32}>Favorite Characters</StyledText>
         <FlatList
           horizontal
-          data={favouriteCharacters}
+          data={favoriteCharacters}
           keyExtractor={({id}:any,index)=>index.toString()+id}
           renderItem={({item}:any)=>renderMarvelCharacter(item,true)}
           ItemSeparatorComponent={()=><View style={{width:10}}/>}
           showsHorizontalScrollIndicator={false}
         />
         {
-          favouriteCharacters.length==0 ?
-          <StyledText >You don't have any favourite character. You can add one in his profile card</StyledText>
+          (!favoriteCharacters || favoriteCharacters.length==0) 
+          ? <StyledText >You don't have any favorite character. You can add one in his profile card</StyledText>
           : null
         }
       </ScrollView>

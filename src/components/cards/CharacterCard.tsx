@@ -3,7 +3,6 @@ import React from 'react'
 import { StyledCard } from './StyledCard'
 import StyledText from '../texts/StyledText'
 import { colors } from '../../styles/colors'
-import StyledSectionList from '../lists/StyledSectionList'
 
 interface CharacterCardProps{
     title ?: string,
@@ -23,6 +22,7 @@ export const CharacterCard = ({cardStyle,title,uri,description,onPress,width,hei
             height={height}
             onPress={onPress}
             style={cardStyle}
+            activeOpacity={0.9}
         >
             <View style={[styles.imageContainer,{...imageStyle}]}>
                 <ImageBackground
